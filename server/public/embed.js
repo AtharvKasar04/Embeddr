@@ -98,14 +98,14 @@
                 // Create blog HTML
                 blogElement.innerHTML = `
                     <h2 class="blog-title">
-                        <a href="http://localhost:3000/blog/${blog.slug}" target="_blank">${blog.title}</a>
+                        <a href="http://localhost:5173/blog/${blog.slug}" target="_blank">${blog.title}</a>
                     </h2>
                     <div class="blog-content">
                         ${blog.content ? blog.content.substring(0, 200) + (blog.content.length > 200 ? '...' : '') : ''}
                     </div>
                     <div class="blog-meta">
                         <span class="date">${new Date(blog.createdAt).toLocaleDateString()}</span>
-                        <a href="http://localhost:3000/blog/${blog.slug}" class="view-link" target="_blank">
+                        <a href="http://localhost:5173/blog/${blog.slug}" class="view-link" target="_blank">
                             Read More
                         </a>
                     </div>
