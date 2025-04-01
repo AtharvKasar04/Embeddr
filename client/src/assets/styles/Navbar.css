@@ -25,7 +25,7 @@
 .navbar-menu{
     /* border: 2px solid red; */
     display: flex;
-    gap: 10px;
+    gap: 20px;
     align-items: center;
     justify-content: space-between;
     font-family: 'Inter';

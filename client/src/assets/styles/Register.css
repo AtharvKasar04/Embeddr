@@ -1,0 +1,53 @@
+.auth-container{
+    background-color: white;
+    width: 20%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Inter';
+    padding: 20px 40px;
+    border-radius: 6px;
+}
+
+.auth-container > h2{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.form-group{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-group label{
+    color: gray;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.form-group input{
+    padding: 10px 20px;
+    /* background-color: black; */
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+.regForm{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.regSubmitBtn{
+    padding: 10px 16px;
+    background-color: #007bff;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    font-family: 'Inter';
+}

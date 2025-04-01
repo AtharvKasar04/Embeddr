@@ -17,28 +17,6 @@ const Landing: React.FC = () => {
                 </div>
             </header>
 
-            <section className="features">
-                <h2>Why Choose Embeddr?</h2>
-                <div className="featuresGrid">
-                    <div className="featureCard">
-                        <h3>Easy Integration</h3>
-                        <p>Just copy and paste a single line of code to embed your blogs anywhere.</p>
-                    </div>
-                    <div className="featureCard">
-                        <h3>Customizable</h3>
-                        <p>Choose from multiple themes and customize the appearance of your embedded blogs.</p>
-                    </div>
-                    <div className="featureCard">
-                        <h3>Secure</h3>
-                        <p>Your content is protected with secure authentication and embed tokens.</p>
-                    </div>
-                    <div className="featureCard">
-                        <h3>Analytics</h3>
-                        <p>Track views and engagement across all your embedded blogs.</p>
-                    </div>
-                </div>
-            </section>
-
             <section className="howItWorks">
                 <h2>How It Works</h2>
                 <div className="steps">
@@ -65,13 +43,6 @@ const Landing: React.FC = () => {
                 </div>
             </section>
 
-            <section className="cta">
-                <h2>Ready to Get Started?</h2>
-                <p>Join thousands of bloggers who trust Embeddr for their content distribution.</p>
-                <Link to="/register" className="primaryButton">
-                    Create Your Account
-                </Link>
-            </section>
         </div>
     );
 };

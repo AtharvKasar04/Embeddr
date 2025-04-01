@@ -6,6 +6,10 @@
     /* color: #F2DE9B; */
 }
 
+body{
+    background-color: #202216;
+}
+
 .hero {
     /* background-color: #f8f9fa; */
     /* border: 2px solid red; */
@@ -28,6 +32,7 @@
 .ctaButtons {
     margin-top: 20px;
     font-family: 'Francois One';
+    letter-spacing: 1px;
 }
 
 .primaryButton, .secondaryButton {
@@ -37,6 +42,7 @@
     font-weight: bold;
     display: inline-block;
     margin: 5px;
+    font-weight: 400;
 }
 
 .primaryButton {
@@ -49,11 +55,17 @@
     color: white;
 }
 
-.features, .howItWorks, .cta {
+.howItWorks, .cta {
     margin-top: 50px;
+    font-family: 'Inter';
 }
 
-.featuresGrid, .steps {
+.howItWorks h2{
+    color: white;
+    font-size: 2rem;
+}
+
+.steps {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -61,12 +73,18 @@
     margin-top: 20px;
 }
 
-.featureCard, .step {
-    background: white;
+.step {
+    background: #a7e9c3;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    /* border-radius: 8px; */
+    box-shadow: 2px 2px 0px 1px #F2DE9B;
     width: 250px;
+    transition: 0.3s ease-out;
+}
+
+.step:hover{
+    border-radius: 6px;
+    transform: scale(1.02);
 }
 
 .stepNumber {

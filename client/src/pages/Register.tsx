@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
+import "../assets/styles/Register.css"
 
 const Register: React.FC = () => {
     const [username, setUsername] = useState('');
@@ -24,7 +25,7 @@ const Register: React.FC = () => {
         <div className="auth-container">
             <h2>Register</h2>
             {error && <div className="error">{error}</div>}
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className='regForm'>
                 <div className="form-group">
                     <label htmlFor="username">Username</label>
                     <input
@@ -55,7 +56,7 @@ const Register: React.FC = () => {
                         required
                     />
                 </div>
-                <button type="submit">Register</button>
+                <button type="submit" className='regSubmitBtn'>Register</button>
             </form>
             <p>
                 Already have an account? <Link to="/login">Login</Link>
