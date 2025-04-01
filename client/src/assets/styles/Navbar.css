@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    background-color: #83dba8;
+    overflow: hidden;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-brand{
+    font-size: 2rem;
+    font-family: 'Francois One';
+    font-weight: 700;
+}
+
+.navbar-brand-link{
+    text-decoration: none;
+}
+
+.navbar-menu{
+    /* border: 2px solid red; */
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Inter';
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.navbar-menu-links{
+    color: #202216;
+    text-decoration: none;
+}

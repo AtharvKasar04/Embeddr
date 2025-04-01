@@ -2,21 +2,32 @@
     font-family: Arial, sans-serif;
     text-align: center;
     padding: 20px;
+    background-color: #202216;
+    /* color: #F2DE9B; */
 }
 
 .hero {
-    background-color: #f8f9fa;
+    /* background-color: #f8f9fa; */
+    /* border: 2px solid red; */
+    color: #F2DE9B;
     padding: 50px 20px;
-    border-radius: 10px;
+}
+
+.hero > h1{
+    font-size: 5rem;
+    letter-spacing: 2px;
+    font-family: 'Francois One', sans-serif;
 }
 
 .tagline {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: #555;
+    font-family: 'Inter';
 }
 
 .ctaButtons {
     margin-top: 20px;
+    font-family: 'Francois One';
 }
 
 .primaryButton, .secondaryButton {
