@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { useAuth } from '../contexts/AuthContext';
+import "../assets/styles/CreateBlog.css";
 
 const CreateBlog: React.FC = () => {
     const [title, setTitle] = useState('');

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useAuth } from '../contexts/AuthContext';
+import "../assets/styles/EmbedBlogs.css";
 
 interface Blog {
     _id: string;
@@ -90,7 +91,7 @@ const BlogEmbed: React.FC = () => {
             <div className="embed-section">
                 <h3>Your Embed Code</h3>
                 <div className="embed-code">
-                    <pre>{embedCode}</pre>
+                    <pre className='embed-code'>{embedCode}</pre>
                     <button 
                         onClick={() => navigator.clipboard.writeText(embedCode)}
                         className="copy-button"
