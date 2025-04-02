@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios';
 import { useAuth } from '../contexts/AuthContext';
+import "../assets/styles/EditBlog.css";
 
 interface Blog {
     title: string;
@@ -73,11 +74,11 @@ const EditBlog: React.FC = () => {
     };
 
     return (
-        <div className="blog-form-container">
+        <div className="edit-blog-container">
             <h2>Edit Blog</h2>
-            {error && <div className="error">{error}</div>}
+            {error && <div className="edit-error">{error}</div>}
             <form onSubmit={handleSubmit}>
-                <div className="form-group">
+                <div className="edit-form-group">
                     <label htmlFor="title">Title</label>
                     <input
                         type="text"
@@ -119,7 +120,7 @@ const EditBlog: React.FC = () => {
                         Publish
                     </label>
                 </div>
-                <div className="button-group">
+                <div className="edit-button-group">
                     <button type="submit">Save Changes</button>
                     <button type="button" onClick={handleDelete} className="delete">
                         Delete Blog

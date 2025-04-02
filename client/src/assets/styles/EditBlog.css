@@ -1,0 +1,106 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Edit Blog Page Container */
+.edit-blog-container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Page Title */
+.edit-blog-container h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 16px;
+}
+
+/* Error Message */
+.edit-error {
+    color: red;
+    font-size: 1rem;
+    margin-bottom: 12px;
+}
+
+/* Form Groups */
+.edit-form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 14px;
+}
+
+.edit-form-group label {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 6px;
+}
+
+/* Input Fields */
+.edit-form-group input,
+.edit-form-group select,
+.edit-form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+}
+
+.edit-form-group textarea {
+    resize: vertical;
+}
+
+/* Publish Checkbox */
+.edit-form-group label input {
+    margin-right: 6px;
+    transform: scale(1.2);
+}
+
+/* Buttons */
+.edit-button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.edit-button-group button {
+    padding: 10px 18px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Save Button */
+.edit-button-group button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+}
+
+.edit-button-group button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Delete Button */
+.edit-button-group .delete {
+    background-color: #dc3545;
+    color: white;
+}
+
+.edit-button-group .delete:hover {
+    background-color: #c82333;
+}
