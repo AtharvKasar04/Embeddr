@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { useAuth } from '../contexts/AuthContext';
+import "../assets/styles/MyBlogs.css";
 
 interface Blog {
     _id: string;
@@ -54,8 +55,8 @@ const MyBlogs: React.FC = () => {
                         <div key={blog._id} className="blog-card">
                             <h3>{blog.title}</h3>
                             <div className="blog-meta">
-                                <span className={`status ${blog.isPublished ? 'published' : 'draft'}`}>
-                                    {blog.isPublished ? 'Published' : 'Draft'}
+                                <span className={`status ${blog.isPublished ? 'published:' : 'draft'}`}>
+                                    {blog.isPublished ? 'Published on: ' : 'Draft'}
                                 </span>
                                 <span className="date">
                                     {new Date(blog.createdAt).toLocaleDateString()}
