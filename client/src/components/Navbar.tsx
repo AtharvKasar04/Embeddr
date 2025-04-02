@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
                         <Link to="/create-blog" className='navbar-menu-links'>Create Blog</Link>
                         <Link to="/my-blogs" className='navbar-menu-links'>My Blogs</Link>
                         <Link to="/embed-blogs" className='navbar-menu-links'>Embed Blogs</Link>
-                        <button onClick={handleLogout}>Logout</button>
+                        <button onClick={handleLogout} className='logoutBtn'>Logout</button>
                     </>
                 ) : (
                     <>

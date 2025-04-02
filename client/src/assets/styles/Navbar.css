@@ -20,6 +20,7 @@
 
 .navbar-brand-link{
     text-decoration: none;
+    font-family: 'Francois One';
 }
 
 .navbar-menu{
@@ -36,4 +37,20 @@
 .navbar-menu-links{
     color: #202216;
     text-decoration: none;
+}
+
+.logoutBtn{
+    padding: 8px 16px;
+    border: 2px solid black;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: rgb(255, 123, 123);
+    box-shadow: 2px 2px 0px 1px black;
+    transition: 0.2s ease-out;
+}
+
+.logoutBtn:hover{
+    box-shadow: none;
+    background-color: rgb(255, 100, 100);
 }

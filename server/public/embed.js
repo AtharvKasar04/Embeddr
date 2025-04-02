@@ -2,7 +2,7 @@
     const script = document.currentScript;
     const embedToken = script.getAttribute('data-embed-token');
 
-    console.log("Embeddr script loaded with token:", embedToken);
+    // console.log("Embeddr script loaded with token:", embedToken);
 
     if (!embedToken) {
         console.error('Embed token not found');
@@ -74,7 +74,7 @@
             const response = await fetch(`http://localhost:5000/api/blogs/embed?token=${embedToken}`);
             const blogs = await response.json();
 
-            console.log("Loaded blogs:", blogs);
+            // console.log("Loaded blogs:", blogs);
 
             if (!Array.isArray(blogs)) {
                 console.error("Response is not an array:", blogs);
@@ -91,7 +91,7 @@
             container.innerHTML = '';
 
             blogs.forEach(blog => {
-                console.log("Rendering blog:", blog);
+                // console.log("Rendering blog:", blog);
                 const blogElement = document.createElement('div');
                 blogElement.className = `embeddr-blog theme-${blog.theme || 'default'}`;
                 
