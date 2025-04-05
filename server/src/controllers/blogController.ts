@@ -149,7 +149,7 @@ export const getEmbeddableBlogs: RequestHandler = async (req, res) => {
 
         const blogs = await Blog.find(query)
             .populate('author', 'username')
-            .select('title slug theme createdAt');
+            .select('title slug theme createdAt content');
             
         res.json(blogs);
     } catch (error) {
