@@ -27,9 +27,10 @@
         }
         .embeddr-blog {
             margin-bottom: 20px;
-            padding: 15px;
+            padding: 15px 30px;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            font-family: 'Inter'
         }
         .theme-default { background-color: #fff; color: #333; }
         .theme-dark { background-color: #1a1a1a; color: #fff; }
@@ -67,6 +68,12 @@
             text-decoration: underline;
         }
     `;
+
+    const fontLink = document.createElement('link');
+    fontLink.href = 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap';
+    fontLink.rel = 'stylesheet';
+    document.head.appendChild(fontLink);
+
     document.head.appendChild(styles);
 
     async function loadBlogs() {
