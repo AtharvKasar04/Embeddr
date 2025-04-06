@@ -46,7 +46,7 @@ JWT_SECRET=your_jwt_secret
 
 5. Start the server:
 ```bash
-cd ../server
+cd ../server/src
 npm start
 ```
 
