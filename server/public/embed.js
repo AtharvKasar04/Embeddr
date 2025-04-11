@@ -78,7 +78,7 @@
 
     async function loadBlogs() {
         try {
-            const response = await fetch(`http://localhost:5000/api/blogs/embed?token=${embedToken}`);
+            const response = await fetch(`https://embeddr-backend.onrender.com/api/blogs/embed?token=${embedToken}`);
             const blogs = await response.json();
 
             // console.log(blogs)

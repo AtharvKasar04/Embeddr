@@ -21,7 +21,7 @@ const BlogEmbed: React.FC = () => {
         const fetchBlogs = async () => {
             try {
                 const response = await axios.get(
-                    'http://localhost:5000/api/blogs/user/blogs',
+                    'https://embeddr-backend.onrender.com/api/blogs/user/blogs',
                     {
                         headers: { Authorization: `Bearer ${token}` }
                     }
@@ -38,7 +38,7 @@ const BlogEmbed: React.FC = () => {
         const getEmbedToken = async () => {
             try {
                 const response = await axios.get(
-                    'http://localhost:5000/api/users/embed-token',
+                    'https://embeddr-backend.onrender.com/api/users/embed-token',
                     {
                         headers: { Authorization: `Bearer ${token}` }
                     }
@@ -56,7 +56,7 @@ const BlogEmbed: React.FC = () => {
     const handleBlogSelection = async (blogId: string, isSelected: boolean) => {
         try {
             await axios.patch(
-                'http://localhost:5000/api/blogs/embed-status',
+                'https://embeddr-backend.onrender.com/api/blogs/embed-status',
                 {
                     blogIds: [blogId],
                     isSelected
@@ -76,7 +76,7 @@ const BlogEmbed: React.FC = () => {
     const embedCode = `<script>
     (function() {
         var script = document.createElement('script');
-        script.src = 'http://localhost:5000/embed.js';
+        script.src = 'https://embeddr-backend.onrender.com/embed.js';
         script.setAttribute('data-embed-token', '${embedToken}');
         document.head.appendChild(script);
     })();
