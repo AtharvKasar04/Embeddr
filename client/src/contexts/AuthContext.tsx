@@ -34,7 +34,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         const fetchUser = async () => {
             if (token) {
                 try {
-                    const response = await axios.get('http://localhost:5000/api/users/profile', {
+                    const response = await axios.get('https://embeddr-backend.onrender.com/api/users/profile', {
                         headers: { Authorization: `Bearer ${token}` }
                     });
                     setUser(response.data);
@@ -51,7 +51,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
     const login = async (email: string, password: string) => {
         try {
-            const response = await axios.post('http://localhost:5000/api/users/login', {
+            const response = await axios.post('https://embeddr-backend.onrender.com/api/users/login', {
                 email,
                 password
             });
@@ -66,7 +66,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
     const register = async (username: string, email: string, password: string) => {
         try {
-            const response = await axios.post('http://localhost:5000/api/users/register', {
+            const response = await axios.post('https://embeddr-backend.onrender.com/api/users/register', {
                 username,
                 email,
                 password

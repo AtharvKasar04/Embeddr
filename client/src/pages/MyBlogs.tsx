@@ -22,7 +22,7 @@ const MyBlogs: React.FC = () => {
         const fetchBlogs = async () => {
             try {
                 const response = await axios.get(
-                    'http://localhost:5000/api/blogs/user/blogs',
+                    'https://embeddr-backend.onrender.com/api/blogs/user/blogs',
                     {
                         headers: { Authorization: `Bearer ${token}` }
                     }

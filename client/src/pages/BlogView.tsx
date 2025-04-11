@@ -21,7 +21,7 @@ const BlogView: React.FC = () => {
     useEffect(() => {
         const fetchBlog = async () => {
             try {
-                const response = await axios.get(`http://localhost:5000/api/blogs/${slug}`);
+                const response = await axios.get(`https://embeddr-backend.onrender.com/api/blogs/${slug}`);
                 setBlog(response.data);
             } catch (err) {
                 setError('Failed to load blog. Please try again.');

@@ -16,7 +16,7 @@
     // Fetch and display blogs
     async function loadBlogs() {
         try {
-            const response = await fetch(`http://localhost:5000/api/blogs/embeddable?embedToken=${embedToken}`);
+            const response = await fetch(`https://embeddr-backend.onrender.com/api/blogs/embeddable?embedToken=${embedToken}`);
             const blogs = await response.json();
 
             if (blogs.length === 0) {

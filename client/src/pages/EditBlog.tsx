@@ -27,7 +27,7 @@ const EditBlog: React.FC = () => {
         const fetchBlog = async () => {
             try {
                 const response = await axios.get(
-                    `http://localhost:5000/api/blogs/${slug}`,
+                    `https://embeddr-backend.onrender.com/api/blogs/${slug}`,
                     {
                         headers: { Authorization: `Bearer ${token}` }
                     }
@@ -45,7 +45,7 @@ const EditBlog: React.FC = () => {
         e.preventDefault();
         try {
             await axios.put(
-                `http://localhost:5000/api/blogs/${slug}`,
+                `https://embeddr-backend.onrender.com/api/blogs/${slug}`,
                 blog,
                 {
                     headers: { Authorization: `Bearer ${token}` }
@@ -61,7 +61,7 @@ const EditBlog: React.FC = () => {
         if (window.confirm('Are you sure you want to delete this blog?')) {
             try {
                 await axios.delete(
-                    `http://localhost:5000/api/blogs/${slug}`,
+                    `https://embeddr-backend.onrender.com/api/blogs/${slug}`,
                     {
                         headers: { Authorization: `Bearer ${token}` }
                     }

@@ -16,7 +16,7 @@ const CreateBlog: React.FC = () => {
         e.preventDefault();
         try {
             const response = await axios.post(
-                'http://localhost:5000/api/blogs',
+                'https://embeddr-backend.onrender.com/api/blogs',
                 { title, content, theme },
                 {
                     headers: { Authorization: `Bearer ${token}` }
