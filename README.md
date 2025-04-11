@@ -57,7 +57,7 @@ npm start
 ```
 
 The application will be available at:
-- Frontend: http://localhost:5173
+- Frontend: https://embeddr-phi.vercel.app
 - Backend API: https://embeddr-backend.onrender.com/
 
 ## Usage
